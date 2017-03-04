@@ -36,7 +36,7 @@ const parseDefaults = {
   format // transform for v0 spec
 }
 
-function parse (str, options = parseDefaults) {
+export function parse (str, options = parseDefaults) {
   const tokens = lexer(str, options)
   const nodes = parser(tokens, options)
   return format(nodes, options)
