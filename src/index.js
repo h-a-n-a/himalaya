@@ -29,7 +29,7 @@ const voidTags = [
   'meta', 'param', 'source', 'track', 'wbr'
 ]
 
-const parseDefaults = {
+export const parseDefaults = {
   voidTags,
   closingTags,
   childlessTags,
